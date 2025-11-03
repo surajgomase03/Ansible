@@ -1,0 +1,36 @@
+For AWS Infrastructure:
+
+Step 1: Install ansible
+
+Step 2 : Install python ,boto, boto3 , awscli
+
+Step 3 : For connectivity ansible to AWS
+        creates new IAM Role Get access key and secret key
+
+Step 4 : with the help aws cli set Environment value to connect with AWS Account
+        aws configure
+        AWS Access Key ID:
+        AWS Secret Access Key: 
+
+Step 5 : aws sts get-caller-identity run command to check aws account is setup or not      
+
+Step 5 : Create ansible folder structure;
+         roles/<rolename>/task/main.yml
+         inventories/<name>/hosts
+         inventories/<name>/host_var/<hostname>.yml
+         inventories/<name>/group_var/<groupname>.yml
+         files/
+         template/
+
+Step 6 : Start Writing playbook
+
+
+ansible command:
+
+ansible-playbook <name>.yml
+ansible-doc -l | grep module name
+ansible-doc module name | cat 
+ansible-doc -s modulename
+
+       
+
